@@ -1,1 +1,1 @@
-/product/:id  intent://produto/:id#Intent;scheme=meuapp;package=br.com.myfome.my_fome;end  302
+/product/:id  intent://product/:id#Intent;scheme=meuapp;package=br.com.myfome.my_fome;end  302

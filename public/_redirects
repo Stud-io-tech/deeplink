@@ -1,1 +1,4 @@
-intent://product/:id#Intent;scheme=meuapp;package=br.com.myfome.my_fome;end
+/product/*  intent://product/:splat#Intent;scheme=myfome;package=br.com.myfome.my_fome;end  302
+/store/*    intent://store/:splat#Intent;scheme=myfome;package=br.com.myfome.my_fome;end    302
+/login      intent://login#Intent;scheme=myfome;package=br.com.myfome.my_fome;end           302
+/           intent://home#Intent;scheme=myfome;package=br.com.myfome.my_fome;end            302

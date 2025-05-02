@@ -1,0 +1,10 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "br.com.myfome.my_fome",
+      "sha256_cert_fingerprints": [
+        "61992414D294C0B910123F7589B1552ED65539B64F59CE9E10097D6F0B1DF22E"
+      ]
+    }
+  }]

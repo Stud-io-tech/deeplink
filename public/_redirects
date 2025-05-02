@@ -1,3 +1,0 @@
-/product/*  intent://product/:splat#Intent;scheme=myfome;package=br.com.myfome.my_fome;end  302
-/store/*    intent://store/:splat#Intent;scheme=myfome;package=br.com.myfome.my_fome;end    302
-/*          intent:///:splat#Intent;scheme=myfome;package=br.com.myfome.my_fome;end         302

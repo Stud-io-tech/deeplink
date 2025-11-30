@@ -2,9 +2,9 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "br.com.myfome.my_fome",
+    "package_name": "br.com.caprichaai.app",
     "sha256_cert_fingerprints": [
-      "61:99:24:14:D2:94:C0:B9:10:12:3F:75:89:B1:55:2E:D6:55:39:B6:4F:59:CE:9E:10:09:7D:6F:0B:1D:F2:2E"
+      "51:2C:52:7E:55:9B:39:7E:C6:C2:27:2C:80:6F:F9:53:26:0D:0C:8A:DE:2C:7B:34:50:D5:41:15:97:BC:8C:63"
     ]
   }
 }]

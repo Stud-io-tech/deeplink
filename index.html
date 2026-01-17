@@ -8,21 +8,21 @@
   <script>
     function openApp() {
       const path = window.location.pathname;
-
       const route = path === "/" ? "home" : path.substring(1);
+
+      const fallback = encodeURIComponent(
+        "https://homolazarus.netlify.app/"
+      );
 
       const intent =
         "intent://" + route +
         "#Intent;" +
         "scheme=https;" +
         "package=br.com.caprichaai.app;" +
+        "S.browser_fallback_url=" + fallback + ";" +
         "end;";
 
       window.location.href = intent;
-
-      setTimeout(() => {
-        window.location.href = "https://homolazarus.netlify.app/";
-      }, 1500);
     }
   </script>
 </head>

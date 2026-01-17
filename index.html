@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-    <title>Abrindo CaprichaAí...</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>CaprichaAí</title>
 </head>
+
 <body>
-    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
-        <h2>Redirecionando...</h2>
-        <p>Se o download não começar, <a id="download-link" href="SEU_LINK_DO_DRIVE_AQUI">clique aqui</a>.</p>
-    </div>
 
-    <script>
-        window.onload = function() {
-            var driveUrl = "https://homolazarus.netlify.app/";
-            
-            window.location.href = driveUrl;
-
-            setTimeout(function() {
-                document.getElementById('download-link').innerText = "Clique aqui para baixar manualmente";
-            }, 3000);
-        };
-    </script>
+  <script>
+    setTimeout(function () {
+      window.location.href = "https://homolazarus.netlify.app/";
+    }, 2500);
+  </script>
 </body>
+
 </html>

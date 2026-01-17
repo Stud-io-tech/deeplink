@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>Capricha AÍ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <script>
     function openApp() {
-      const path = window.location.pathname;
-      const route = path === "/" ? "home" : path.substring(1);
+      const fullPath =
+        window.location.pathname + window.location.search;
 
       const fallback = encodeURIComponent(
-        "https://homolazarus.netlify.app/"
+        window.location.href
       );
 
       const intent =
-        "intent://" + route +
+        "intent://caprichaai" +
         "#Intent;" +
         "scheme=https;" +
         "package=br.com.caprichaai.app;" +
+        "S.route=" + encodeURIComponent(fullPath) + ";" +
         "S.browser_fallback_url=" + fallback + ";" +
         "end;";
 

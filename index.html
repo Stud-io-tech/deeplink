@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Capricha AÍ</title>
-
-  <script>
-    function openApp() {
-      const fullPath =
-        window.location.pathname + window.location.search;
-
-      const fallback = encodeURIComponent(
-        window.location.href
-      );
-
-      const intent =
-        "intent://caprichaai" +
-        "#Intent;" +
-        "scheme=https;" +
-        "package=br.com.caprichaai.app;" +
-        "S.route=" + encodeURIComponent(fullPath) + ";" +
-        "S.browser_fallback_url=" + fallback + ";" +
-        "end;";
-
-      window.location.href = intent;
-    }
-  </script>
+    <title>Abrindo CaprichaAí...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<body>
+    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+        <h2>Redirecionando...</h2>
+        <p>Se o download não começar, <a id="download-link" href="SEU_LINK_DO_DRIVE_AQUI">clique aqui</a>.</p>
+    </div>
 
-<body onload="openApp()">
-  <p>Redirecionando para o Capricha AÍ...</p>
+    <script>
+        window.onload = function() {
+            var driveUrl = "https://homolazarus.netlify.app/";
+            
+            window.location.href = driveUrl;
+
+            setTimeout(function() {
+                document.getElementById('download-link').innerText = "Clique aqui para baixar manualmente";
+            }, 3000);
+        };
+    </script>
 </body>
 </html>

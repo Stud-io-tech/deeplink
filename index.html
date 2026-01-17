@@ -3,15 +3,52 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CaprichaAí</title>
+  <title>Capricha AÍ</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ffffff;
+      font-family: sans-serif;
+      flex-direction: column;
+    }
+
+    .loader {
+      border: 4px solid #ffffff;
+      border-top: 4px solid #FE0019;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    p {
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
-
+  <div class="loader"></div>
   <script>
     setTimeout(function () {
       window.location.href = "https://homolazarus.netlify.app/";
-    }, 2500);
+    }, 5000);
   </script>
 </body>
 
